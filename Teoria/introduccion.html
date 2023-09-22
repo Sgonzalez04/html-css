@@ -1,0 +1,97 @@
+<!--! enter le arma automaticamente-->
+<!DOCTYPE html> <!--tipo html--> <!-- pagina inicial sitio web = INDEX html -->
+<html lang="en"> 
+<head> <!--primera seccion-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--content:todos los metadatos-->
+    <title>Document</title> <!-- es el nombre de la pagina -->
+    </head><!-- cierra primera seccion-->
+<!--/sirve para terminar-->
+    <body><!--que contiene el texto-->
+        <!-- form=pide datos al usuario -->
+        <form action="/home/spukN01-006/Documents" name="encuesta" method="post"><!-- direccion del archivo a ir -->
+            <!-- method get es para envio de datos pero no es seguro --><!-- method get es un poco mas seguro pero no lo es aun -->
+            <!-- input colocar caja texto, y label para el texto al lado de la caja-->
+            <label for="nom">Digite su nombre </label> <!-- for es para cuando se clikee valla al input -->
+            <input type="text" id="nom" placeholder="escriba solo primer nombre" value="aaa"> 
+            <!-- id es donde lo guarda, placeholder=pista de que colocar, value=valor por defecto -->
+            <br>
+            <label for="edad">Digite su edad</label>
+            <input type="text" id="edad" name="edad">
+            <br>
+            <label for="ocup">Digite su ocupacion</label>
+            <input type="text" id="ocup" name="ocupacion">
+            <br><br>
+            <label for="dato">digite su contraseña</label>
+            <input type="password" id="dato" name="contraseña">
+            <!-- type password es para contraseña no muestra -->
+            <br><br>
+            <label for="correo">digite su correo</label>
+            <input type="email" id="correo" name="correo"><!-- type email es para correo -->
+            <br>
+            <label for="act y desac">boton activar y desactivar</label>
+            <input type="checkbox" id="act y desac" name="boton activar o desactivar"> <!-- es para activar o desactivar -->
+            <br>
+            <label for="boton">boton que no desactiva</label>
+            <input type="radio" id="boton" name="boton no desactiva"> <!-- radio=marcar un circulo que no desative -->
+            <br>
+            <label for="archivo">archivo a guardar</label> <!--file=guardar archivo -->
+            <input type="file"  id="archivo" name="archivo a guardar">
+            <br>
+            <label for="opinion">digite su opinion sobre la pagina:</label><br>
+            <textarea name="opinion" id="opinion" cols="60" rows="4" name="opinion">Este es el valor por defecto</textarea> <!--text area=para colocar texto-->
+            <!--name=clave guardado,rows=numero de filas, cols=columnas-->
+
+            <!-- ul es para lista desordenada, ol lista ordenada, li= categoria items -->
+            <ul>
+                <li>primer item</li>
+                <li>segundo item</li>
+                <li>tercer item</li>
+                <li>cuarto item</li>
+            </ul>
+
+            <ol start="10"> <!-- start=comienza en 10, reverse= orden al revez -->
+                <li>primer item</li>
+                <li>segundo item</li>
+                <li>tercer item</li>
+                <li>cuarto item</li>
+            </ol>
+
+            <!-- control espacio todas las opciones -->
+
+            <button type="submit">Enviar</button> <!-- boton=Enviar --> 
+            <button type="reset">reestablecer valores</button> <!-- reinicia todo -->
+            <button type="button">hace algo con JS</button> <!-- hace algo programado con java script(no se ha programado nada) -->
+        </form>
+        <!--escribiendo solo h1 sale todo-->
+        <h1>hola todos</h1> <!--h=es titulo, y el numero es para el tamaño-->
+        <h2>hola todos</h2>
+        <h3>hola todos</h3>
+        <h4>hola todos</h4>
+        <h5>hola todos</h5>
+        <h6>hola todos</h6>
+        <!--p es para parrafo, lorem es para algo aleatorio-->
+        <!--br=salto de linea-->
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br>Fuga nemo, ut error quisquam magnam itaque, maiores aperiam sapiente assumenda quasi modi facilis odit at facere dolor quia, minima alias eum.</p>
+        <!--span= seleccionar texto-->
+        <!--syle="color: seleccionar cambio de color texto"-->
+        <p><span style="color: blue;">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span></p>
+
+        <!--escribir solo texto-->
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis voluptatem reiciendis ullam cupiditate temporibus quas tempore similique, quaerat repellat aliquid? Inventore repellat repudiandae velit dolorem corrupti cupiditate commodi quam. Velit!
+        <hr><!--separa colocando una linea-->
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quibusdam voluptatibus sit sint assumenda voluptas iure neque quos aspernatur. Autem assumenda consequatur voluptate nulla earum dolore, provident sit modi nostrum.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique aliquid suscipit tempore nostrum possimus, iste consequuntur? Distinctio quas deserunt molestiae odio soluta, nihil illo consequuntur, iure, sed id architecto eos!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ex magni possimus reiciendis provident voluptate in blanditiis illum fuga labore sapiente, aperiam quibusdam deleniti, sint, quidem exercitationem aliquid veniam non?
+        <hr>
+        <!-- hr*5 =colocarlo 5 veces -->
+        <a href="https://www.google.com">este link lleva a google</a><!-- a=ubicacion a ir -->
+        <!-- si es link = a si es archivo = link -->
+        <br>
+        <!--img=colocar imagen, src=direccion imagen, alt=descripcion nombre, width=largo imagen, height=alto imagen -->
+        <img src="https://i.ytimg.com/vi/nsXu6LPKo-E/maxresdefault.jpg" alt="google img" width="600", height="340">
+    </body>
+</html>
+
+<!--descargar live server para verlo-->
+<!----> <!--como colocar comentario= control shif a --> <!--ubicacion= edit=togle block commend -->

@@ -1,0 +1,126 @@
+h1{color: purple;
+    text-align: center;
+    margin-top: 100xp;
+    font-size: 80px;}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffedba;
+    margin: 0;
+    padding: 0;
+    font-size: 24px/*tamaño del texto*/
+    }
+
+.enlaces{text-align: center; /*centra el text en medio*/}
+
+p{font-size: 20px; 
+    text-align: center;
+    display: flex;}
+li{font-size: 20px;}
+ol{font-size: 20px;}
+
+h2 {    
+    color: red;
+    text-align: center;
+    margin-top: 50xp;  
+    font-size: 40px;
+}
+main{text-align: center;
+    margin-right: 80px;
+    margin-left: 80px;}
+
+.menu {
+        background-color: #3d3d3d;/*color fondo*/
+        color: #fff;
+        padding: 10px;/*espacio entre contenido y borde*/
+    }
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu li{
+        display: flex;/*es para que se utilize en varios*/
+        justify-content: space-evenly;/*darle un espaciado en la misma linea*/   
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 30px;
+    }
+
+
+.inicio img{
+    border-radius: 10%;
+    width: 70%;
+    max-width: 1000px; /*ancho máximo*/
+    height: auto; /*proporcion original imagen*/
+    display: block; /*para tratarlo como un bloque*/
+    margin:auto;/*se aline*/
+    } 
+
+.appetizers {
+    width:100%;
+    height: 50%;
+    display: flex;
+    justify-content: center; /*centra horizontalmente */
+    align-items: center;} /*centra verticalmente*/
+
+    .appetizers img{
+        border-radius: 10%; /*bordea los lados*/
+        max-width: 200px;;
+        height: auto;
+        margin: 0 100px;}/* Agrega un espacio horizontal entre la imagen y el texto */
+
+.main_courses{
+    width:100%;
+    height: 50%;
+    display: flex;
+    justify-content: center; /*centra horizontalmente */
+    align-items: center;}
+    .main_courses img{
+        border-radius: 10%; /*bordea los lados*/
+        max-width: 200px;;
+        height: auto;
+        margin: 0 100px;}
+
+.vegetarian{    
+    width:100%;
+    height: 50%;
+    display: flex;
+    justify-content: center; /*centra horizontalmente */
+    align-items: center;}
+    .vegetarian img{
+        border-radius: 10%; /*bordea los lados*/
+        max-width: 200px;;
+        height: auto;
+        margin: 0 100px;}
+
+.desserts{
+    width:100%;
+    height: 50%;
+    display: flex;
+    justify-content: center; /*centra horizontalmente */
+    align-items: center;}
+    .desserts img{
+        border-radius: 10%; /*bordea los lados*/
+        max-width: 200px;;
+        height: auto;
+        margin: 0 100px;}
+
+.beverage{width:100%;
+    height: 50%;
+    display: flex;
+    justify-content: center; /*centra horizontalmente */
+    align-items: center;}
+    .beverage img{
+        border-radius: 10%; /*bordea los lados*/
+        max-width: 200px;;
+        height: auto;
+        margin: 0 100px;}
+
+ul:hover li{ /* hover: al pasarlo por encima cambia a opcion */
+    font-size: 1em; /* agranda */
+}

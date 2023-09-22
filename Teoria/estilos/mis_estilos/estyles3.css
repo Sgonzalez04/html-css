@@ -1,0 +1,5 @@
+p{color: blue !important;}/* important se coloca primero */
+
+.example{color: red;}
+
+/* (selector universal = *)*/

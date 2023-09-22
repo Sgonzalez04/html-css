@@ -1,0 +1,7 @@
+pixeles: px
+centimetros: cm
+milimetros:mm
+pulgadas: in
+
+em: tamaño de una m
+rem: tamaño de letra del elemento raíz

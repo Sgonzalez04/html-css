@@ -1,0 +1,6 @@
+.highlight{/* cuando es hightligt resalta amarillo */
+    background-color: yellow;} 
+
+#resaltado{background-color: aquamarine;} /* # = id */
+
+h1{font-size: 18xp;}

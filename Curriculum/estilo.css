@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #afafaf;
+    /* background-image: para que sea de fondo la imagen ; */
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+}
+
+h1 {
+    color: purple;
+    text-align: center;
+    margin-top: 50xp;
+    font-size: 25px;
+    font-size: 40px;
+}
+
+h2 {
+    color: red;
+    text-align: center;
+    margin-top: 50xp;
+    font-size: 30px;
+}
+
+p {
+    font-size: 20px;
+    margin-right: 80px;
+    /*deja espacio para que se vea bien*/
+    ;
+    margin-left: 80px;
+}
+
+li {
+    font-size: 20px;
+}
+
+hr {
+    border: #000;
+    height: 2px;
+    /*aumenta el grosor*/
+    background-color: #000;
+}
+
+.menu {
+    background-color: #3d3d3d;
+    /*color fondo*/
+    color: #fff;
+    padding: 10px;
+    /*espacio entre contenido y borde*/
+}
+
+    .menu ul {
+
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu li{
+        display: flex;/*es para que se utilize en varios*/
+        justify-content: space-evenly;/*darle un espaciado en la misma line*/   
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 30px;
+    }
+
+.top {
+    text-align: center;
+    font-style: italic;
+    /*coloca tipo italic*/
+    font-weight: bold;
+    /*coloca negrilla*/
+}
+
+.summary {
+    text-align: center;
+}
+
+.experience {
+    text-align: center;
+}
+
+    .experience img {
+        border: 3px solid #000;
+        border-radius: 10%;
+    }
+
+.abilites {
+    margin-right: 80px;
+    margin-left: 80px;
+    display: flex;
+    /*display=permite colocar cosas al lado*/
+    justify-content: center
+}
+
+    .abilites img {
+        border-radius: 10%;
+        width: 200px;
+        height: 50%;
+        display: block;
+        /*para tratarlo como un bloque*/
+        margin-left: 150px;
+        border: 3px solid #000;
+    }
+
+.contact {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    /*centra todo */
+}
+
+    .contact img {
+        border-radius: 50%;
+        /*coloca la imagen en un circulo */
+        margin-left: 300px;
+        /*sirve para separar la imagen del texto */
+        float: left;
+        width: 300px;
+        ;
+        height: 30%;
+        border: 3px solid #000;
+        /*coloca un borde a una imagen*/
+}

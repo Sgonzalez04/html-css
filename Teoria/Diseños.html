@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>diseños</title>
+    <style>
+        .flex-container{ /* contenedor flexible */
+            display: flex;
+            flex-direction: row; /* row: queden en la misma fila */
+            align-items: center; /* ajusta altura en el centro */
+            justify-content: space-between; /* ubique sola */
+            height: 200px; /* altura */
+            background-color: rgb(123, 165, 201)
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container"; style="margin: 2%;">
+        <h1>titulo</h1>
+        <p>Este es un parrafo de texto</p>
+        <button>boton</button>
+    </div>
+    <br>
+    <div class="flex-container">
+        <!-- margin es margen de separacion -->
+        <div style="width: 50%;height: 80%; background-color: yellow; margin: 2%;"></div>
+        <div style="width: 50%;height: 80%; background-color: red; margin: 2%;"></div>
+        <div style="width: 50%;height: 80%; background-color: blue; margin: 2%;"></div>
+        <div style="width: 50%;height: 80%; background-color: black; margin: 2%;"></div>
+        <div style="width: 50%;height: 80%; background-color: blueviolet; margin: 2%;"></div>
+        <div style="width: 50%;height: 80%; background-color: aquamarine; margin: 2%;"></div>
+    </div>
+    <br>
+    <div class="flex-container" style="background-color: blueviolet;">
+        <div style="width: 50%;height: 80%; background-color: green; margin: 2%; justify-content: center;"></div>
+    </div>
+</body>
+</html>

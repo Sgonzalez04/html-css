@@ -1,0 +1,122 @@
+:root {--open-sans: 'Open Sans', sans-serif;
+    --roboto: 'Roboto', sans-serif; }
+
+
+body{background-color: black;}
+.fondo{
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+    }
+
+.menu {
+        background-color: #3d3d3d;/*color fondo*/
+        color: #fff;
+        padding: 10px;/*espacio entre contenido y borde*/
+    }
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu li{
+        display: flex;/*es para que se utilize en varios*/
+        justify-content: space-evenly;/*darle un espaciado en la misma linea*/   
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 30px;
+    }
+
+
+.resumen {background-color: #5050508a;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    align-items: center;}
+    .resumen img{
+        border-radius: 10%; /*bordea los lados*/
+        max-width: 400px;;
+        height: auto;
+        margin: 0 50px;
+        display: flex;}     
+
+.extra{background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;}
+    .all{display: grid;
+        grid-template-columns: 1fr 1fr; /* 1 columnas: menú y contenido principal */
+        grid-template-rows: auto 1fr 1fr; /* Filas: encabezado, contenido, pie de página */
+        gap: 10px;
+        height: 60vh;
+        }
+    .r-extra1{background-color: #5050508a;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;}
+    .r-extra2{background-color: #5050508a;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;}
+    .r-extra3{background-color: #5050508a;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;}
+    .r-extra4{background-color: #5050508a;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;}
+main{background-color: black;
+    padding: 20px;}
+
+/* Estilos para pantallas grandes (escritorio) */
+@media (min-width: 768px) {
+    .container {
+        display: flex;
+    }
+
+    .nav {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        flex: 1;
+    }
+
+    .content {
+        background-color: #fff;
+        padding: 20px;
+        flex: 3;
+    }
+    .extra{height: auto;}
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 467px) 
+{
+    .resumen {flex-direction: column;} /*se coloca todo como una columna*/
+    body{font-size: 14px;}
+    .menu a{font-size: 14px;}
+    .resumen img{max-width: 300px;
+        height: auto;}
+    .all{max-width: 450px;
+        max-height: 1700px;
+        height: auto;}
+}

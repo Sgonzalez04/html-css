@@ -1,0 +1,106 @@
+body{background-color: grey;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+.central{
+    display: flex;
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    height: 100vh; /*centra vertical*/}
+        .principales{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); /* 1 columnas: menú y contenido principal */
+            grid-template-rows: 1fr; /* Filas: encabezado, contenido, pie de página */
+            justify-content: space-evenly;
+            margin: 3px;/*ajuste altura*/
+            }
+            .principales > a {
+                border: 3px solid #000; /* Borde individual para cada columna */
+                margin-left: 3px;
+                background-image: linear-gradient(to bottom, #faf1a0, #98f798);
+                text-align: center;
+            }
+
+        .lenguaje{
+            display: grid;
+            grid-template-columns: 1fr; /* 1 columnas*/
+            width: 100%; /* Esto hará que el contenido principal ocupe todo el ancho disponible */
+            background-color: #5050508a;
+            margin: 3px;
+            justify-items: center; /* Centra horizontalmente el contenido */
+            align-items: center;/*centra vertical*/
+            text-align: center;/*centra el texto*/
+            background-image: linear-gradient(to bottom, #faf1a0, #98f798);/*fondo color degradado*/
+            border: 3px solid #000;
+        }
+        .cls{
+            display: flex;
+            justify-content: center;
+            background-image: linear-gradient(to bottom, #faf1a0, #98f798);/*fondo color degradado*/
+            border: 3px solid #000;
+        }
+
+        .doble{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 1fr;
+            align-items: center;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            
+            }
+            .doble > a {
+                display: flex;
+                border: 3px solid #000; /* Borde individual para cada columna */
+                margin: 3px;
+                background-image: linear-gradient(to bottom, #faf1a0, #98f798);
+                height: 100%; /* Establecer una altura del 100%*/
+                justify-content: center; /*alinea texto medio*/
+                text-align: center;
+                align-items: center;
+
+            }
+        .elec{
+            display: grid;
+            grid-template-columns: 1fr; /* 1 columnas*/
+            grid-template-rows: 1fr; /* Filas*/
+            width: 100%; /* Esto hará que el contenido principal ocupe todo el ancho disponible */
+            margin: 3px;
+            justify-items: center; /* Centra horizontalmente el contenido */
+            align-items: center;
+            text-align: center;
+            background-image: linear-gradient(to bottom, #faf1a0, #98f798);/*fondo color degradado*/
+            border: 3px solid #000;
+        }
+
+        .a{background-color: #5050508a;
+            display: flex;
+            justify-content: center; /*alinea texto medio*/
+            align-items: center; /*alinea altura*/
+            padding: 10px;
+            background-image: linear-gradient(to bottom, #faf1a0, #98f798);/*fondo color degradado*/
+            border: 3px solid #000;
+            margin-top: 3px;/*ajuste altura A*/
+        }
+    /*lado derecho*/
+    .lado{background-color: #5050508a;
+        display: flex;
+        justify-content: center; /*alinea texto medio*/
+        align-items: center; /*alinea altura*/
+        height: 650px;
+        writing-mode:sideways-rl; /*hacia los lados hacia abajo*/
+        text-orientation: upright; /* texto esté orientado hacia arriba */
+        white-space: nowrap; /*evita que el texto se divida en varias líneas */
+        background-image: linear-gradient(to bottom, #faf1a0, #98f798);/*fondo color degradado*/
+        margin-left: 10px;/*que tan a la derecha esta*/
+        border: 3px solid #000;
+        height: 70vh;
+    }
+
+a {
+    text-decoration: none; /* decoracion texto */
+    color: rgb(31, 25, 16); /* color texto */
+}
+a:hover {
+    color: #ff8800;
+}

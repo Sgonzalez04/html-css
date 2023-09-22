@@ -1,0 +1,115 @@
+:root {--open-sans: 'Open Sans', sans-serif;
+    --roboto: 'Roboto', sans-serif; }
+
+.titulo{
+    background-color: #252525;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */}
+
+.extra{background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    height: 700px;} /* tamaño pagina */
+    .contenido{
+        background-color: #5050508a;
+        text-align: center;
+        padding: 10px;
+        max-width: 50%; /* Ancho máximo ajustado */
+        border-radius: 10%; /* Bordes circulares */
+        }
+        img{
+            border-radius: 10%;
+            width: auto;
+            max-width: 100%; /*ancho máximo*/
+            height: auto; /*proporcion original imagen*/}
+    .clases{
+        border-radius: 10%;
+        background-color: #5050508a;
+        color: #fff;
+        text-align: center;
+        padding: 10px; /* Ancho máximo ajustado */}
+
+header {
+    background-color: #3d3d3d;
+    padding: 10px;
+    }
+    .menu {
+        background-color: #3d3d3d;/*color fondo*/
+        color: #fff;
+        padding: 10px;/*espacio entre contenido y borde*/
+    }
+        .menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu li{
+            display: flex;/*es para que se utilize en varios*/
+            justify-content: space-evenly;/*darle un espaciado en la misma linea*/   
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 30px;
+        }
+
+body{background-color: black;}
+
+
+p > a { /* p contenido en a */
+    text-decoration: none; /* decoracion texto */
+    color: blanchedalmond; /* color texto */
+}
+
+p > a:hover {
+    color: #ff9d2c; /* color al pasar por ensima */
+}
+
+/* Estilos para pantallas grandes (escritorio) */
+@media (min-width: 768px) {
+    .container {
+        display: flex;
+    }
+
+    .content {
+        background-color: #fff;
+        padding: 20px;
+        flex: 3;
+    }
+    .extra{height: auto;
+    width: auto;}
+
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 467px) {
+    .container {
+        flex-direction: column;
+    }
+    body{font-size: 14px;}
+    .extra{height: 600px;
+        flex-direction: column;}
+    .nav, .content {
+        width: 100%;
+        padding: 1px;}
+    .contenido{width: 100%; /*ancho*/
+        max-width: none; /* Eliminar el ancho máximo */
+        text-align: center; /*alinear al medio*/}
+    .imgen{width: 100%}/*la imagen ocupe el 100%*/
+    .menu a{font-size: 14px;}
+    .all{height: auto;}
+    p > a { /* p contenido en a */
+        text-decoration: none; /* decoracion texto */
+        color: blanchedalmond; /* color texto */
+    }
+}

@@ -1,0 +1,8 @@
+.grid-container{
+    grid-template-rows: repeat(3, 100px); /* repite 3 filas */
+    grid-template-columns: repeat(3, 1fr); /* repite 3 columnas */
+    display: grid; /* al contenedor lo convierte en cuadricula */
+    grid-gap: 10px; /* espacio entre las celdas de cuadriculas */
+}
+
+    /* grid-template-areas: none /* perimite asignar nombres a areas de la cuadricula */

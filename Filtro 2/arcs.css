@@ -1,0 +1,101 @@
+body{background-image:url(galaxia.jpg);}
+.titulo{background-color: #252525;
+        margin-bottom: 100px;}/*centra obligado*/
+
+.arcs{display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+}
+
+    img{
+        border-radius: 10%;
+        border: 3px solid white;
+        width: auto;
+        max-width: 700px; /*ancho máximo*/
+        height: auto; /*proporcion original imagen*/
+        
+        }
+    .clases{
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        }
+    
+    .menu {
+        background-color: #3d3d3d;/*color fondo*/
+        color: #fff;
+        padding: 10px;/*espacio entre contenido y borde*/
+    }
+        .menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu li{
+            display: flex;/*es para que se utilize en varios*/
+            justify-content: space-evenly;/*darle un espaciado en la misma linea*/   
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 30px;
+        }
+
+
+p > a { /* p contenido en a */
+    text-decoration: none; /* decoracion texto */
+    color: blanchedalmond; /* color texto */
+}
+
+p > a:hover {
+    color: #ff9d2c; /* color al pasar por ensima */
+}
+
+/* Estilos para pantallas tablets */
+@media (max-width: 750px) {
+    .cuadro {
+        flex-direction: column;
+        align-items: center;
+    }
+    img{
+        width: 100%;
+    }
+    .clases {
+        text-align: center; /* Centrar el texto horizontalmente */
+    }
+    .menu h2{font-size: 16px;}
+    p{font-size: 14px;}
+    p > a { /* p contenido en a */
+        text-decoration: none; /* decoracion texto */
+        color: blanchedalmond; /* color texto */
+        font-size: 14px;
+    }
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 467px) {
+    .cuadro {
+        flex-direction: column;
+        align-items: center;
+    }
+    img{
+        width: 100%;
+    }
+    
+    .clases {
+        text-align: center; /* Centrar el texto horizontalmente */
+    }
+    .menu h2{font-size: 14px;}
+    p{font-size: 14px;}
+    p > a { /* p contenido en a */
+        text-decoration: none; /* decoracion texto */
+        color: blanchedalmond; /* color texto */
+        font-size: 14px;
+    }
+}

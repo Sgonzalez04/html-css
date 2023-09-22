@@ -1,0 +1,48 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url('papel-viejo.png');
+    background-size: cover; /* cubre todo */
+}
+header{ /* colocar todo en medio */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+article{
+    display: flex;
+    align-items:flex-end
+}
+
+img{
+    max-width: 200px;
+    height: auto;
+    border: 3px solid #000;
+    left: 10px;
+    display: flex;
+    justify-content: center; /* centra imagen */
+    margin: auto;
+}
+.shop img{border: 0px solid #000;}
+.flor img{border: 0px solid #000;
+    float: left; /* este izquierda */}
+
+.contenedor{ /* contenedor flexible */
+    display: flex;
+    flex-direction: row; /* row: queden en la misma fila */
+    align-items: center; /* ajusta altura en el centro */
+    justify-content: space-between; /* ubique sola */
+    height: 200px; /* altura */
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.uno{
+    width: 50%;height: 80%; margin: 2%;
+}
+.dos{
+    width: 50%;height: 80%; margin: 2%;
+}
+.tres{
+    width: 50%;height: 80%; margin: 2%;
+}

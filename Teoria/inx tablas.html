@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejemplo tabla basica</title>
+</head>
+<body>
+    <table style="border:1px solid black; border-spacing: 10px; width:100%;"> <!-- width=tamaño muestra  -->
+        <!--borde punteado negro--><!--border-spacing=tamaño adentro(xp)--><!--border collapse=sin borde-->
+        <caption style="color:red">numeros del uno al 9</caption> <!--caption=titulo de la tabla-->
+            <tr>
+                <th>ciudad</th>  <!--th=titulo de columna-->
+                <th>pais</th>
+                <th>continente</th>
+            </tr>
+            <tr> <!-- fila de tabla -->
+                <td rowspan="2" style="border:1px solid black; padding:30px;">uno y 4</td> <!--border=borde delgado--><!-- rospan=#columna -->
+                <td style="border:1px solid black; padding:20px;">dos</td>  <!--dashed=borde punteado-->
+                <td style="border:1px solid black; padding:10xp;">tres</td><!--padding=espacio interno-->
+                <!-- medidas de lectura = px:pixeles cm:centimetros -->
+            </tr>
+            <tr> <!-- fila de tabla -->
+                <td colspan="2"style="border:1px solid black">5 y 6</td> <!--colspan=hacer una sola fila que ocupe espacio dado -->
+            </tr>
+            <tr> <!-- fila de tabla -->
+                <td style="border:1px solid black">siete</td> 
+                <td style="border:1px solid black">ocho</td>
+                <td style="border:1px solid black">nueve</td>
+            </tr>
+            <tr>
+                <td style="border:1px solid black">10</td>
+                <td style="border:1px solid black">11</td>
+                <td style="border:1px solid black">12</td>
+            </tr>
+    </table>
+</body>
+</html>
